@@ -36,8 +36,7 @@ public class Emprestimo {
                         date.setDate(date.getDate()+2);
                     }
                     
-                    i.get(b).calculaDataDevolucao(date);
-                    System.out.println("\n"+i.get(b).dataDevolucao);
+                    i.get(b).calculaDataDevolucao(date)
                     if(data_aux.before(i.get(b).getDataDevolucao())){
                         data_aux = i.get(b).getDataDevolucao();
                     }
